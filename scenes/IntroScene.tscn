@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://x0ag0rl8fp4a"]
+
+[ext_resource type="Script" uid="uid://mxuu7py4plui" path="res://scripts/intro_scene.gd" id="1_ngq6t"]
+[ext_resource type="FontFile" uid="uid://do0ugcb8gbkvd" path="res://assets/text/monogram.ttf" id="2_ngq6t"]
+
+[node name="IntroScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ngq6t")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -479.5
+offset_top = -82.0
+offset_right = 492.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_ngq6t")
+theme_override_fonts/bold_font = ExtResource("2_ngq6t")
+theme_override_font_sizes/normal_font_size = 60
+tab_size = 8
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="LineTimer" type="Timer" parent="."]

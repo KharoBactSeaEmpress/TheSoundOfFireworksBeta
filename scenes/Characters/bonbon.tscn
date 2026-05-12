@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=3 uid="uid://bb2625jkvknk0"]
+
+[ext_resource type="Script" uid="uid://bu48xomj27nos" path="res://scripts/mon.gd" id="1_lciw6"]
+[ext_resource type="Texture2D" uid="uid://tsignht3pg11" path="res://assets/sprites/bonbon_sprites/BonBon.png" id="2_j7dok"]
+[ext_resource type="Texture2D" uid="uid://dwybflm2n6suf" path="res://assets/sprites/bonbon_sprites/BonBon (1).png" id="3_x6kv7"]
+[ext_resource type="Texture2D" uid="uid://cc7227v516uwd" path="res://assets/sprites/bonbon_sprites/BonBon (2).png" id="4_lciw6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ippj3"]
+atlas = ExtResource("2_j7dok")
+region = Rect2(0, 0, 23, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s81tg"]
+atlas = ExtResource("3_x6kv7")
+region = Rect2(0, 0, 23, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wout"]
+atlas = ExtResource("4_lciw6")
+region = Rect2(0, 0, 23, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv4to"]
+atlas = ExtResource("3_x6kv7")
+region = Rect2(0, 0, 23, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u14sc"]
+atlas = ExtResource("2_j7dok")
+region = Rect2(0, 0, 23, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1n70y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ippj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s81tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wout")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jv4to")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u14sc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6axe0"]
+size = Vector2(21, 30)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1n70y"]
+radius = 22.0
+
+[node name="BonBon" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_lciw6")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1n70y")
+autoplay = "default"
+frame_progress = 0.19037801
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_6axe0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_1n70y")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

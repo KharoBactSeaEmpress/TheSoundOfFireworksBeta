@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dojhy85oe484m"]
+
+[ext_resource type="Script" uid="uid://c64774jp7i1rr" path="res://scripts/area_2d.gd" id="1_f15o4"]
+[ext_resource type="FontFile" uid="uid://do0ugcb8gbkvd" path="res://assets/text/monogram.ttf" id="2_qytiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qytiw"]
+size = Vector2(36, 92)
+
+[node name="InteractionDoor" type="Area2D"]
+script = ExtResource("1_f15o4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-19, 27)
+shape = SubResource("RectangleShape2D_qytiw")
+
+[node name="InteractPrompt" type="PanelContainer" parent="."]
+offset_top = 6.0
+offset_right = 18.0
+offset_bottom = 19.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="InteractPrompt"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="InteractPrompt"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qytiw")
+text = "[E] Enter"
+horizontal_alignment = 1
