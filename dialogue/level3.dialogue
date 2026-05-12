@@ -1,0 +1,20 @@
+~ start
+Bonbon: Oh it's Ivy, Happy New Year Ivy!
+Wynne: Happy New Year Ivy.
+- [Greet Them]
+	Ivy: Happy New Year.
+	Ivy: Did you guys do the things we need to do?
+- [How are the projects?]
+	Ivy: Hey Bonbon, how are the projects coming along?
+BonBon: Well...
+Ivy: Hey, we need to finish the projects soon!
+BonBon: You’re such a killjoy Ivy~
+Ivy: Wynne, you’re seriously tolerating this?
+Wynne: New Years only happen once every year, alright?
+Ivy: Ugh, this is dumb.
+Ivy: I’m wasting my time on this.
+Ivy: I need to go to sleep and ready up for tomorrow’s quiz.
+Bonbon: Wait, there's a quiz tomorrow?
+Wynne: What? There is?
+do SceneTransition.change_scene("res://scenes/Levels/quiz_minigame.tscn")
+=> END

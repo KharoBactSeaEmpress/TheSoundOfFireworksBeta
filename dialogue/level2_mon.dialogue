@@ -1,0 +1,14 @@
+~ start
+Mon: Yooo, Happy New Year Ivy!
+- [Greet Him]
+	Ivy: Happy New Year.
+- [...]
+	Ivy: ...
+	Mon: Uhh, okay?
+Ivy: How are our projects coming along?
+Ivy: The deadlines are closing in and we still have a lot to do.
+Mon: Oh come on Ivy, it just hit a new year! Take a break will you?
+Ivy: What do you mean take a break? The pygame deadline is due next week!
+Ivy: Oh come on, where are the others?
+Mon: From what I know, they're in their room?
+=> END

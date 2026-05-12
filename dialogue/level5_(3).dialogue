@@ -1,0 +1,27 @@
+~ start
+Wynne: Hey, who called you?
+Wynne: That's never happened before, right Mon?
+Mon: Yeah hahaha.
+- What do you mean?
+	Ivy: What do you mean by that's never happened before?
+	Wynne: Oh you know, someone calling you. lol.
+	Ivy: What did I even expect from you?
+- I don't know.
+	Ivy: I don't know.
+	Ivy: It was an anonymouse user.
+Mon: Still, that's pretty unusual, huh Wynne?
+Wynne: Yeah...
+Ivy: Get off my back. I'll just go home.
+Ivy: There's still so much to do, my gosh.
+Wynne: Well, you go on ahead. Me and Mon still have some things to take care of.
+Mon: We do?
+Wynne: Did you seriously forget?
+Ivy: Alright, I'll leave you two to your work. 
+Ivy: Before I go, where's BonBon?
+Mon: I heard he had to take care of something.
+Mon: We'll probably meet him soon, we'll be close to where he is.
+Ivy: Okay then, I'll see you all later at the dorms.
+Ivy: Don't even try to slack off.
+Wynne: Don't worry about it.
+do SceneTransition.change_scene("")
+=> END
