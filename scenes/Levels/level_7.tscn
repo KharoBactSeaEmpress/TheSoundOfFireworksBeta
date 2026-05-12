@@ -1,22 +1,23 @@
-[gd_scene load_steps=27 format=3 uid="uid://c35qk85038bd4"]
+[gd_scene load_steps=26 format=3 uid="uid://rh5rwr010td4"]
 
-[ext_resource type="Script" uid="uid://d3ot7wy0ir7om" path="res://scripts/level_1.gd" id="1_l5ivm"]
-[ext_resource type="PackedScene" uid="uid://b2doyvly82yne" path="res://scenes/Characters/player.tscn" id="1_ptgt0"]
-[ext_resource type="Texture2D" uid="uid://bicyin8qw37ws" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/floorswalls_LRK.png" id="2_fkdrv"]
-[ext_resource type="Resource" uid="uid://8oias85tafy4" path="res://dialogue/level1.dialogue" id="2_xxpsm"]
-[ext_resource type="Texture2D" uid="uid://c1xri5fafk4b" path="res://assets/tilemaps/cozy_interior_room/beds_BR.png" id="3_o21ul"]
-[ext_resource type="Texture2D" uid="uid://c6m5ytx2ppors" path="res://assets/tilemaps/cozy_interior_room/decorations_BR.png" id="4_y368g"]
-[ext_resource type="Texture2D" uid="uid://cstp1nd0d3aem" path="res://assets/tilemaps/cozy_interior_room/wardrobes_BR.png" id="5_l5ivm"]
-[ext_resource type="PackedScene" uid="uid://c60y1j28adpek" path="res://scenes/invisible_wall.tscn" id="6_o21ul"]
-[ext_resource type="Texture2D" uid="uid://5j0up7e2wy50" path="res://assets/tilemaps/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="8_ngn3o"]
-[ext_resource type="Texture2D" uid="uid://iilxhepo8yy3" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/decorations_LRK.png" id="9_iiv34"]
-[ext_resource type="Texture2D" uid="uid://msm42xjh4gcc" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/kitchen_LRK.png" id="10_vtd0g"]
-[ext_resource type="Texture2D" uid="uid://cp0sdest52s2" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/livingroom_LRK.png" id="11_hk2jt"]
-[ext_resource type="Texture2D" uid="uid://diwtf5xxcvafh" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/doorswindowsstairs_LRK.png" id="12_iiv34"]
-[ext_resource type="PackedScene" uid="uid://dojhy85oe484m" path="res://scenes/Interactable_Door.tscn" id="14_vtd0g"]
+[ext_resource type="Script" uid="uid://d3ot7wy0ir7om" path="res://scripts/level_1.gd" id="1_pbrk3"]
+[ext_resource type="Resource" uid="uid://c8bm5gjb30ap5" path="res://dialogue/level7intro.dialogue" id="2_r5rbs"]
+[ext_resource type="PackedScene" uid="uid://b2doyvly82yne" path="res://scenes/Characters/player.tscn" id="3_ewj6a"]
+[ext_resource type="Texture2D" uid="uid://bicyin8qw37ws" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/floorswalls_LRK.png" id="4_bo2gy"]
+[ext_resource type="Texture2D" uid="uid://c1xri5fafk4b" path="res://assets/tilemaps/cozy_interior_room/beds_BR.png" id="5_7oi1n"]
+[ext_resource type="Texture2D" uid="uid://c6m5ytx2ppors" path="res://assets/tilemaps/cozy_interior_room/decorations_BR.png" id="6_gyuqd"]
+[ext_resource type="Texture2D" uid="uid://cstp1nd0d3aem" path="res://assets/tilemaps/cozy_interior_room/wardrobes_BR.png" id="7_vioqh"]
+[ext_resource type="Texture2D" uid="uid://5j0up7e2wy50" path="res://assets/tilemaps/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="8_7qyfq"]
+[ext_resource type="Texture2D" uid="uid://iilxhepo8yy3" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/decorations_LRK.png" id="9_nclyw"]
+[ext_resource type="Texture2D" uid="uid://msm42xjh4gcc" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/kitchen_LRK.png" id="10_46xvq"]
+[ext_resource type="Texture2D" uid="uid://cp0sdest52s2" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/livingroom_LRK.png" id="11_utaib"]
+[ext_resource type="Texture2D" uid="uid://diwtf5xxcvafh" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/doorswindowsstairs_LRK.png" id="12_nm25f"]
+[ext_resource type="PackedScene" uid="uid://c60y1j28adpek" path="res://scenes/invisible_wall.tscn" id="13_ue5f1"]
+[ext_resource type="PackedScene" uid="uid://bwvhgcw6s4xwv" path="res://scenes/dialogue_trigger.tscn" id="14_pbrk3"]
+[ext_resource type="Resource" uid="uid://ciflkx7s5crkg" path="res://dialogue/level7.dialogue" id="15_r5rbs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xxpsm"]
-texture = ExtResource("2_fkdrv")
+texture = ExtResource("4_bo2gy")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -65,13 +66,9 @@ texture = ExtResource("2_fkdrv")
 3:3/0 = 0
 4:3/0 = 0
 5:3/0 = 0
-5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:3/0 = 0
-6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:3/0 = 0
-7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:3/0 = 0
-8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:3/0 = 0
 10:3/0 = 0
 11:3/0 = 0
@@ -83,13 +80,9 @@ texture = ExtResource("2_fkdrv")
 3:4/0 = 0
 4:4/0 = 0
 5:4/0 = 0
-5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
-6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:4/0 = 0
-7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:4/0 = 0
-8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:4/0 = 0
 10:4/0 = 0
 11:4/0 = 0
@@ -255,7 +248,7 @@ texture = ExtResource("2_fkdrv")
 13:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j85eu"]
-texture = ExtResource("3_o21ul")
+texture = ExtResource("5_7oi1n")
 1:1/0 = 0
 2:1/0 = 0
 4:1/0 = 0
@@ -366,7 +359,7 @@ texture = ExtResource("3_o21ul")
 2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4p1o3"]
-texture = ExtResource("4_y368g")
+texture = ExtResource("6_gyuqd")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -449,7 +442,7 @@ texture = ExtResource("4_y368g")
 10:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14nfc"]
-texture = ExtResource("5_l5ivm")
+texture = ExtResource("7_vioqh")
 10:1/0 = 0
 11:1/0 = 0
 13:1/0 = 0
@@ -718,7 +711,7 @@ texture = ExtResource("5_l5ivm")
 8:21/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gowt"]
-texture = ExtResource("8_ngn3o")
+texture = ExtResource("8_7qyfq")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -885,7 +878,7 @@ texture = ExtResource("8_ngn3o")
 15:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7u17y"]
-texture = ExtResource("9_iiv34")
+texture = ExtResource("9_nclyw")
 3:0/0 = 0
 1:1/0 = 0
 3:1/0 = 0
@@ -927,7 +920,7 @@ texture = ExtResource("9_iiv34")
 10:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a60bd"]
-texture = ExtResource("10_vtd0g")
+texture = ExtResource("10_46xvq")
 5:0/0 = 0
 6:0/0 = 0
 12:0/0 = 0
@@ -1316,7 +1309,7 @@ texture = ExtResource("10_vtd0g")
 19:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_811s2"]
-texture = ExtResource("11_hk2jt")
+texture = ExtResource("11_utaib")
 9:1/0 = 0
 10:1/0 = 0
 12:1/0 = 0
@@ -1705,7 +1698,7 @@ texture = ExtResource("11_hk2jt")
 24:24/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hk2jt"]
-texture = ExtResource("12_iiv34")
+texture = ExtResource("12_nm25f")
 27:0/0 = 0
 28:0/0 = 0
 33:0/0 = 0
@@ -2157,22 +2150,14 @@ sources/6 = SubResource("TileSetAtlasSource_a60bd")
 sources/7 = SubResource("TileSetAtlasSource_811s2")
 sources/8 = SubResource("TileSetAtlasSource_hk2jt")
 
-[sub_resource type="Gradient" id="Gradient_ngn3o"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_iiv34"]
-gradient = SubResource("Gradient_ngn3o")
-width = 10
-height = 10
-fill_from = Vector2(0.05140187, 0)
-
-[node name="Level_1" type="Node2D"]
+[node name="Level_7" type="Node2D"]
 position = Vector2(-7, -79)
-script = ExtResource("1_l5ivm")
-intro_dialogue = ExtResource("2_xxpsm")
+script = ExtResource("1_pbrk3")
+intro_dialogue = ExtResource("2_r5rbs")
 
-[node name="Player" parent="." instance=ExtResource("1_ptgt0")]
+[node name="Player" parent="." instance=ExtResource("3_ewj6a")]
 z_index = 8
-position = Vector2(-135, 78)
+position = Vector2(67, 77)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
@@ -2188,20 +2173,9 @@ layer_2/name = "Furniture"
 layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array(131060, 65537, 6, 196596, 65537, 7, 262132, 65537, 8, 327668, 65537, 9, 131061, 131073, 6, 196597, 131073, 7, 262133, 131073, 8, 327669, 131073, 9, -5, 524290, 1, 65531, 524290, 2, -4, 589826, 1, 65532, 589826, 2, -3, 655362, 1, 65533, 655362, 2, -15, 65539, 7, 65521, 65539, 8, 131057, 65539, 9, 196593, 65539, 10, -14, 131075, 7, 65522, 131075, 8, 131058, 131075, 9, 196594, 131075, 10, -13, 196611, 7, 65523, 196611, 8, 131059, 196611, 9, 196595, 196611, 10, 196603, 851971, 8, 262139, 851971, 9, 131068, 917507, 7, 196604, 917507, 8, 262140, 917507, 9, 131069, 983043, 7, 196605, 983043, 8, 262141, 983043, 9, 131067, 851971, 7, 327672, 131074, 8, 393208, 131074, 9, 458744, 131074, 10, 327673, 131074, 9, 393209, 131074, 9, 458745, 131074, 9, 458746, 131074, 9, 393210, 131074, 9, 327674, 131074, 9, 327675, 131074, 9, 393211, 131074, 9, 458747, 131074, 9, 458748, 131074, 9, 393212, 131074, 9, 327676, 131074, 9, 393213, 131074, 9, 327677, 131074, 9, 458749, 131074, 9, 327678, 196610, 8, 393214, 196610, 9, 458750, 196610, 10, 327679, 262146, 8, 393215, 262146, 9, 458751, 262146, 10, 327671, 65538, 8, 393207, 65538, 9, 458743, 65538, 10, 65530, 327685, 1, 131066, 327685, 2, 196602, 327685, 3, -1, 655365, 4, 65535, 655365, 5, 131071, 655365, 6, -11, 65541, 8, 131070, 65541, 5, 196606, 65541, 6, -65533, 458760, 1, 3, 458760, 2, 65539, 458760, 3, -65532, 524296, 1, 4, 524296, 2, 65540, 524296, 3)
 
-[node name="InvisibleWall" parent="." instance=ExtResource("6_o21ul")]
-position = Vector2(-153, 56)
+[node name="InvisibleWall" parent="." instance=ExtResource("13_ue5f1")]
+position = Vector2(-192, 53)
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.2993339, 0.36714986, 0.43596327, 1)
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
-z_index = -9
-position = Vector2(-87.910065, 36.25662)
-rotation = 1.5707964
-scale = Vector2(5.608146, 1.579618)
-energy = 0.4
-texture = SubResource("GradientTexture2D_iiv34")
-
-[node name="InteractionDoor" parent="." instance=ExtResource("14_vtd0g")]
-position = Vector2(82, -4)
-target_scene_path = "uid://nlrjeqsx8pg7"
+[node name="DialogueTrigger" parent="." instance=ExtResource("14_pbrk3")]
+position = Vector2(-199, -2)
+dialogue_resource = ExtResource("15_r5rbs")

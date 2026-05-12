@@ -4,7 +4,7 @@ var questions = [
 	{
 		"question": "What is the primary function of a Compiler?",
 		"options": ["Run code", "Translate code", "Style code"],
-		"correct": 1 # Index of "Translate code"
+		"correct": 1 
 	},
 	{
 		"question": "Which Godot node is best for 2D physics?",
@@ -25,7 +25,6 @@ var score = 0
 
 func _ready():
 	load_question(0)
-	# Connect button signals
 	for i in range(buttons.size()):
 		buttons[i].pressed.connect(_on_option_selected.bind(i))
 
@@ -50,5 +49,4 @@ func _on_option_selected(index):
 
 func finish_quiz():
 	print("Quiz over! Score: ", score)
-	# Use your SceneTransition to go back to the dorm or next level
 	SceneTransition.change_scene("res://scenes/Levels/level_5.tscn")

@@ -1,0 +1,75 @@
+~ start
+(You find yourself in a dark place.)
+Ivy: ...
+Ivy: Where am I?
+Ivy: Wait... I can still remember what happened.
+Ivy: I'm in a time loop of January 1st.
+Ivy: I've retained my memories??
+Ivy: I'm supposed to forget...
+Ivy: Or does that mean I'm not yet back to January 1?
+Ivy: I need to think of this logically while I still have my memories..
+Ivy: Why do i go back to January 1 whenever everyone becomes aware of the loop?
+Ivy: And why do I also go back whenever the date is January 5?
+Ivy: Damn... I have nothing...
+Ivy: I have to recall everything.
+=> recall1
+
+~ recall1
+Ivy: Right now, Which loop am I in...?
+- 1st - 2nd Loop
+	Ivy: No...that can't be right.
+	=> recall1
+- 14th - 15th Loop
+	Ivy: Right. 
+	=> recall2
+- 12th - 13th Loop
+	Ivy: No...that can't be right.
+	=> recall1
+
+~ recall2
+Ivy: And how did we all get in this loop?
+- The Time Machine Made By CDD
+	Ivy: Right. CDD, the company my father made, sent us as the first testers of the time machine we made.
+	Ivy: The Time Machine malfunctioned, but it sent us to where we wanted to go.
+	Ivy: The Time Machine modified my phone and the observation notebook I had in the process.
+	Ivy: And that's why I have the ability to message the future.
+	=> recall3
+- We Don't Know
+	Ivy: No..I have a good idea of how we got in this loop.
+	=> recall2
+
+~ recall3
+Ivy: Damn... I don't know what time it is...
+Ivy: I just pushed Wynne and Bonbon outside of my room earlier.
+Ivy: They're probably being suspicious of me.
+Ivy: Will I reset back to January 1 if they conclude that I know the loop?
+Ivy: Damn! I'm just lacking knowledge on everything!
+Ivy: Think clearly Ivy...
+(You take a deep breath.)
+(You are considering the most logical course of aciton.)
+Ivy: If I have a chance of being reset back, I need to help out on the future Ivy.
+Ivy: I need to send messages.
+Ivy: I need to be subtle so that Ivy won't tell her friends about it.
+Ivy: But not too subtle that she won't believe it and think it's a prank.
+(You feel as if your choices will drastically affect the future.)
+(Choose carefully.)
+(The choices you make will shape your end.)
+Ivy: What should I send to future Ivy?
+- "I am you from the past."
+	Ivy: Okay, let's try being direct to make her understand immediately.
+	Ivy: This should give her more time to think.
+- "Don't tell anyone about this.
+	Ivy: Right. I need to make sure she doesn't reset by letting her friends realize that she knows the loop.
+- [The Codeword]
+	Ivy: Okay, I'll tell her the Codeword I've kept to myself.
+	Ivy: She won't just tell this to anyone since she'll keep it to herself forever.
+Ivy: Now, I explain the situation.
+(You send messages explaining all you've discovered.)
+Ivy: Okay, that's enough. 
+Ivy: If I send too many messages, I'll seem like a scammer.
+Ivy: I need to think of what future Ivy will think.
+Ivy: Now, I just need to wait.
+Ivy: Come on future Ivy, break out of this loop.
+(You are left with no choice but to wait.)
+(Your fate will now be decided by the choices you made to support yourself in the future.)
+=> END

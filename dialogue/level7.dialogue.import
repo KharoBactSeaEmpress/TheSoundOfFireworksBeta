@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ciflkx7s5crkg"
+path="res://.godot/imported/level7.dialogue-c73724cbc642f979e6feaac79a204b9b.tres"
+
+[deps]
+
+source_file="res://dialogue/level7.dialogue"
+dest_files=["res://.godot/imported/level7.dialogue-c73724cbc642f979e6feaac79a204b9b.tres"]
+
+[params]
+
+defaults=true

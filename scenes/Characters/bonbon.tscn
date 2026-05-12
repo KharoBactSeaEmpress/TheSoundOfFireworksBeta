@@ -1,9 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://bb2625jkvknk0"]
+[gd_scene load_steps=15 format=3 uid="uid://bb2625jkvknk0"]
 
 [ext_resource type="Script" uid="uid://bu48xomj27nos" path="res://scripts/mon.gd" id="1_lciw6"]
 [ext_resource type="Texture2D" uid="uid://tsignht3pg11" path="res://assets/sprites/bonbon_sprites/BonBon.png" id="2_j7dok"]
+[ext_resource type="Texture2D" uid="uid://bwdrwit87ci4b" path="res://assets/sprites/bonbon_sprites/BonBon (3).png" id="2_x6kv7"]
 [ext_resource type="Texture2D" uid="uid://dwybflm2n6suf" path="res://assets/sprites/bonbon_sprites/BonBon (1).png" id="3_x6kv7"]
 [ext_resource type="Texture2D" uid="uid://cc7227v516uwd" path="res://assets/sprites/bonbon_sprites/BonBon (2).png" id="4_lciw6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lciw6"]
+atlas = ExtResource("2_x6kv7")
+region = Rect2(0, 0, 24.5, 39.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ippj3"]
 atlas = ExtResource("2_j7dok")
@@ -57,6 +62,7 @@ radius = 22.0
 [node name="BonBon" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_lciw6")
+scary_face_1 = SubResource("AtlasTexture_lciw6")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1n70y")

@@ -1,0 +1,83 @@
+~ start
+(You look for a note...)
+Ivy: ...
+(You found a note!)
+Ivy: There!
+=> read
+
+~ read
+Ivy: There's 2 notes... Which do I read?
+- First one [if GameState.read_note_1 == false]
+	set GameState.read_note_1 = true
+	Ivy: Let's read the first note.
+	I am Ivy. It is January 4.
+	Me and my friends go back to the first of January every time.
+	If I'm correct, we're in the 11th loop right now.
+	If you see this Ivy, it means you're in the 14th loop.
+	I received messages that told me to look for notes in certain places.
+	At the start of January, we went outside, and I found the notes there.
+	If what I read is correct, then I'll go back to the 1st of January when the clock hits 12.
+	So whenever it turns January 5, we will all go back to January 1, and I'll lose my memories.
+	Please, figure something out Ivy.
+	-Ivy, 11th Loop.
+	=> read
+- Second one [if GameState.read_note_2 == false]
+	set GameState.read_note_2 = true
+	Hi!!! I am Ivy and it is February 10, 2026!
+	I work at CDD, the best Science and Technology company in the world!
+	Me and my team have succeeded in creating the time machine!
+	The president of CDD, my father, is going to send me and my team for testing.
+	We were required to list our observings on these notes.
+	We chose to time leap to January 1.
+	We all want to experience the fireworks again.
+	That week was the best week ever.
+	On January 1, we immediately went outside and watched the fireworks!
+	Then the next day, we immediately travelled to another country!
+	The start of the year could never be more fun.
+	What makes it better is that we had no school days!
+	I'm really excited to see what this time leap will do.
+	We're about to enter the time machine in 30 minutes! I'm so excited!
+	We're very well prepared!
+	-Ivy, Start of Time Leap.
+	=>  read
+- I've read both.. [if GameState.read_note_1 == true and GameState.read_note_2 == true]
+	=> finish
+	
+~ finish
+Ivy: ...
+Ivy: Wait, there's another note on the bed...
+(You read the note.)
+I am Ivy. I am from the 12th Loop.
+I found it. I found something that might stop this.
+I can send messages to the future.
+I've read the notes. It seems that the notes aren't affected by the time loop.
+But I've found something better. 
+I can send messages through my phone.
+I don't have much time to explain.
+The Ivy from the 12th loop found something out.
+All of your friends are aware of the time loop.
+It's only you that loses your memories.
+I lost that note of the 12th loop, but it doesn't matter.
+I'll make this note for the 13th loop.
+Once you find this Ivy, I need you to send messages yourself.
+That phone of yours has weird properties.
+I suspect that it was modified while you were in the time machine.
+I'm really running out of time, so to make you believe me Ivy.
+P4546. Re404. Khara. Time.
+-Ivy, 12th Loop.
+
+Ivy: ...
+Ivy: ...
+Ivy: That was my codeword...
+Ivy: I've had that codeword for years, and I've made sure no one could ever know it.
+Ivy: This is a lot to take in.
+Ivy: It even has my signature perfectly...
+Ivy: Okay..okay... 
+Ivy: I am logical and smart, I need to think this through.
+Ivy: I need to assess how truthful this can be...
+Ivy: But if this is true, then I've lost my memories...
+Ivy: How will I confirm this?
+Ivy: Forget it... think logically Ivy...
+(You take some time to assess the possibility of the notes being true.)
+do SceneTransition.change_scene("res://scenes/Levels/level_8.tscn")
+=> END

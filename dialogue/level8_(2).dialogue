@@ -1,0 +1,63 @@
+~ start
+Wynne: Hey Ivy!
+BonBon: I was curious where you went, why'd you go home already?
+BonBon: I was planning that the four of us go to the arcade.
+Wynne: Ivy, what are those notes you're holding?
+"buzz"
+You have 3 New Notifications! 
+(You chose to read the messages.)
+Anonymous User: Ivy. Don't tell your friends about the loop. No matter what.
+Anonymous User: I found out what happens.
+Anonymous User: If you tell them, they-
+Wynne: Ivy? You just gonna ignore us?
+Wynne: You look like you've seen a ghost.
+BonBon: What are you reading anyways?
+- [Lie]
+	Ivy: Oh, These are my study notes for the quizzes!
+	BonBon: ...
+	Wynne: ...
+	BonBon: [speed=0.5]Ivy.
+	BonBon: Once of the things that has never changed with you...
+	BonBon: Is that you are terrible at lying.
+- [Truth]
+	Ivy: I saw some notes...
+	Ivy: It was from me, and I said that we were all in a time loop.
+	Ivy: I apparently reset to January 1 whenever it hits 12 AM on January 5.
+	Ivy: And it said that you were all awar-
+- [...] [if GameState.has_experienced_truth_ending == true]
+	Ivy: Hey what are you doing in my room?? 
+	Ivy: Get out!!
+	Ivy: I'm tryna study properly okay?
+	Ivy: You two know how much there is to do!
+	Wynne: Oh shoot, that's our bad.
+	Wynne: Let's go BonBon.	
+	do SceneTransition.change_scene("res://scenes/Levels/level_9.tscn")
+Wynne: Ivy.
+Wynne: ...
+do GameState.trigger_glitch()
+Ivy: [speed=0.2]What happened to your faces?...
+Wynne: WHY DID YOU HAVE TO FIND OUT??
+Ivy: What..?
+BonBon: WHY DID YOU FIND OUT??
+Wynne: why did you find out??
+BonBon: why did you find out
+Wynne: why did you find
+BonBon: why did you
+Wynne: why
+Ivy: .....
+Ivy: What is going on....?
+Ivy: I have to send a message to myself, quickly.
+Ivy: ...
+Ivy: Okay, one mor-
+Ivy: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Ivy: MY BRAINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+Ivy: IT'S BOILING
+Ivy: MY BRAIN IS BOILING
+Ivy: [speed=0.5]My Brain Is Boiling
+Ivy: [speed=0.2]Brain is Boiling
+Ivy: [speed=0.3]Brain is
+Ivy: [speed=0.2]I am Ivy.
+do GameState.has_experienced_truth_ending = true
+do GameState.loop_count += 1
+do SceneTransition.change_scene("res://scenes/Levels/level_1.tscn")
+=> END

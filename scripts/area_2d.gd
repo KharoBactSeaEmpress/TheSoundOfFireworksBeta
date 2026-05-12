@@ -1,12 +1,11 @@
 extends Area2D
 
 @export_file("*.tscn") var target_scene_path: String
-@onready var prompt = $InteractPrompt # Reference to your Styled Panel
+@onready var prompt = $InteractPrompt 
 
 var is_player_nearby: bool = false
 
 func _ready() -> void:
-	# Hide the prompt by default when the game starts
 	prompt.hide() 
 	
 	body_entered.connect(_on_body_entered)
@@ -23,10 +22,7 @@ func _on_body_exited(body: Node2D) -> void:
 		show_prompt(false)
 
 func show_prompt(should_show: bool):
-	# Simple show/hide
 	prompt.visible = should_show
-	
-	# Optional: Use a Tween for a smooth fade-in
 	var tween = create_tween()
 	var target_alpha = 1.0 if should_show else 0.0
 	tween.tween_property(prompt, "modulate:a", target_alpha, 0.2)

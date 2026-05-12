@@ -23,5 +23,5 @@ Mon: We'll probably meet him soon, we'll be close to where he is.
 Ivy: Okay then, I'll see you all later at the dorms.
 Ivy: Don't even try to slack off.
 Wynne: Don't worry about it.
-do SceneTransition.change_scene("")
+do SceneTransition.change_scene("res://scenes/Levels/level_6.tscn")
 => END
