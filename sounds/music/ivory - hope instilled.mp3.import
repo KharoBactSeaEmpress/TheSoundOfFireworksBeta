@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwr2vhpinau75"
+path="res://.godot/imported/ivory - hope instilled.mp3-75c83e97f7683f360e4228c401e42718.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/ivory - hope instilled.mp3"
+dest_files=["res://.godot/imported/ivory - hope instilled.mp3-75c83e97f7683f360e4228c401e42718.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

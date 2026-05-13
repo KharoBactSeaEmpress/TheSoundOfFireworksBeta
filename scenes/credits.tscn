@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5uoyagd3uwyr"]
+[gd_scene load_steps=4 format=3 uid="uid://c61nwd2cmbv4v"]
 
-[ext_resource type="Script" uid="uid://fblcfpn824ye" path="res://scripts/color_rect.gd" id="1_0ctdu"]
-[ext_resource type="FontFile" uid="uid://c0y8akohhksuv" path="res://assets/monogram.ttf" id="2_2fbfq"]
-[ext_resource type="Script" uid="uid://colc337s7ta04" path="res://scripts/Go_back_button.gd" id="3_8gwij"]
+[ext_resource type="FontFile" uid="uid://do0ugcb8gbkvd" path="res://assets/text/monogram.ttf" id="1_0bpdh"]
+[ext_resource type="Script" uid="uid://c7rsfogs6dhoy" path="res://scripts/credits.gd" id="1_0ctdu"]
+[ext_resource type="Script" uid="uid://ba53nm0wla2fb" path="res://scripts/go_back.gd" id="2_2ckv8"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0ctdu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -21,7 +22,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0.33630487, 0.24831638, 0, 1)
-script = ExtResource("1_0ctdu")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -41,8 +41,8 @@ offset_left = 39.0
 offset_top = 8.0
 offset_right = 639.0
 offset_bottom = 164.0
-theme_override_fonts/normal_font = ExtResource("2_2fbfq")
-theme_override_fonts/bold_font = ExtResource("2_2fbfq")
+theme_override_fonts/normal_font = ExtResource("1_0bpdh")
+theme_override_fonts/bold_font = ExtResource("1_0bpdh")
 theme_override_font_sizes/normal_font_size = 160
 theme_override_font_sizes/bold_font_size = 80
 text = "CREDITS"
@@ -50,12 +50,12 @@ text = "CREDITS"
 [node name="Music" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(600, 100)
 layout_mode = 0
-offset_left = 36.0
-offset_top = 164.0
-offset_right = 636.0
-offset_bottom = 320.0
-theme_override_fonts/normal_font = ExtResource("2_2fbfq")
-theme_override_fonts/bold_font = ExtResource("2_2fbfq")
+offset_left = 35.0
+offset_top = 132.0
+offset_right = 635.0
+offset_bottom = 288.0
+theme_override_fonts/normal_font = ExtResource("1_0bpdh")
+theme_override_fonts/bold_font = ExtResource("1_0bpdh")
 theme_override_font_sizes/normal_font_size = 80
 theme_override_font_sizes/bold_font_size = 80
 text = "Music Used:"
@@ -63,19 +63,21 @@ text = "Music Used:"
 [node name="Music2" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(600, 100)
 layout_mode = 0
-offset_left = 32.0
-offset_top = 234.0
-offset_right = 1141.0
-offset_bottom = 568.0
-theme_override_fonts/normal_font = ExtResource("2_2fbfq")
-theme_override_fonts/bold_font = ExtResource("2_2fbfq")
-theme_override_font_sizes/normal_font_size = 80
-theme_override_font_sizes/bold_font_size = 80
-text = "Mountain Ash - Ivory soundtracks
+offset_left = 35.0
+offset_top = 212.0
+offset_right = 1144.0
+offset_bottom = 620.0
+theme_override_fonts/normal_font = ExtResource("1_0bpdh")
+theme_override_fonts/bold_font = ExtResource("1_0bpdh")
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 78
+text = "Mountain Ash(reprise) - Ivory soundtracks
 Ovata(Reprise) - Ivory soundtracks
 A Lonely Cherry Tree - Pix
 Begin Your Journey - Pix
-"
+člověk - Ivory Soundtracks
+Hope Instilled - Ivory soundtracks
+Underclocked - Eric Skiff"
 
 [node name="GoBack" type="Button" parent="."]
 layout_mode = 0
@@ -83,9 +85,9 @@ offset_left = 976.0
 offset_top = 569.0
 offset_right = 1108.0
 offset_bottom = 623.0
-theme_override_fonts/font = ExtResource("2_2fbfq")
+theme_override_fonts/font = ExtResource("1_0bpdh")
 theme_override_font_sizes/font_size = 46
 text = "Go Back"
-script = ExtResource("3_8gwij")
+script = ExtResource("2_2ckv8")
 
 [connection signal="pressed" from="GoBack" to="GoBack" method="_on_pressed"]

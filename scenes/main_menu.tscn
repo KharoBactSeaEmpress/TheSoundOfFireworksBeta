@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bw6nxj6jmso3f"]
+[gd_scene load_steps=5 format=3 uid="uid://bw6nxj6jmso3f"]
 
 [ext_resource type="Script" uid="uid://d0iwkwp3pcky7" path="res://scripts/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="FontFile" uid="uid://do0ugcb8gbkvd" path="res://assets/text/monogram.ttf" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://c4ru8rbu6xik3" path="res://scripts/credits_button.gd" id="3_bqqt6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
 border_width_left = 2
@@ -58,6 +59,7 @@ theme_override_fonts/font = ExtResource("1_l6cm7")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
 text = "Credits"
+script = ExtResource("3_bqqt6")
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(200, 30)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7w0fkx6frtts"
+path="res://.godot/imported/Eric Skiff - Underclocked  NO COPYRIGHT 8-bit Music  Background.mp3-345eee5dfaeb1acd41a3f21ebcb5f8bd.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/Eric Skiff - Underclocked  NO COPYRIGHT 8-bit Music  Background.mp3"
+dest_files=["res://.godot/imported/Eric Skiff - Underclocked  NO COPYRIGHT 8-bit Music  Background.mp3-345eee5dfaeb1acd41a3f21ebcb5f8bd.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

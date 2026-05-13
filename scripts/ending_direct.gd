@@ -3,19 +3,27 @@ extends Control
 @onready var story_label = $RichTextLabel
 
 var story_lines = [
-	"It is 2026.",
-	"I'm a normal Computer Science Student.",
-	"Unfortunately, we still have work to do even when it's December 31.",
-	"There's still lots of things to do.",
+	"You find yourself in the same dark place.",
+	"You chose to tell Future Ivy that you are from the past.",
+	"You were direct with the approach.",
+	"The Ivy of the Future saw the message...",
+	"And told her friends about it.",
+	"Her friends caught on to what the messages meant.",
+	"And everyone went insane again.",
 	"...",
-	"I just slept a few hours ago...",
-	"But I hear something..." 
+	"The Ivy of the 15th Loop was not able to leave messages for the next loop.",
+	"You have no choice but to place your hope again on the Ivy of the 16th Loop.",
+	"You can feel it...",
+	"The fireworks are starting again.",
+	"You're going back.",
+	"And you will hear it again.",
+	"The Sound of Fireworks."
 ]
 
 var current_line = 0
 
 func _ready() -> void:
-	MusicPlayer.fade_to_song("res://sounds/music/ovata (reprise) - whitepine OST.mp3", 0.0, 5.0)
+	MusicPlayer.fade_to_song("res://sounds/music/calice - ivory (unused song).mp3", 0.0, -1.0)
 	story_label.bbcode_enabled = true 
 	story_label.modulate.a = 0 
 	show_next_line()
@@ -48,10 +56,10 @@ func shake_screen():
 	shake_tween.tween_property(self, "position", Vector2.ZERO, 0.05)
 
 func start_game():
-	MusicPlayer.fade_out_and_stop(0.5)
-	SceneTransition.change_scene("res://scenes/Levels/level_1.tscn")
+	MusicPlayer.fade_out_and_stop(2.5)
+	SceneTransition.change_scene("res://scenes/main_menu.tscn")
 
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
-		MusicPlayer.fade_out_and_stop(0.5)
-		SceneTransition.change_scene("res://scenes/Levels/level_1.tscn")
+		MusicPlayer.fade_out_and_stop(2.5)
+		SceneTransition.change_scene("res://scenes/main_menu.tscn")

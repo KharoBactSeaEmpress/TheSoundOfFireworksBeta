@@ -6,7 +6,7 @@ extends Node2D
 func _ready() -> void:
 	await get_tree().create_timer(0.5).timeout
 	start_intro_dialogue()
-	MusicPlayer.fade_to_song("res://sounds/music/A Lonely Cherry Tree.mp3", 0.0, 5.0)
+	MusicPlayer.fade_to_song("res://sounds/music/ivory - hope instilled.mp3", 0.0, 5.0)
 
 func start_intro_dialogue():
 	var player = get_tree().get_first_node_in_group("player")

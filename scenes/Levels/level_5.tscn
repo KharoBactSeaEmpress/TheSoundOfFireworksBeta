@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://dadd33865xauv"]
+[gd_scene load_steps=24 format=3 uid="uid://dadd33865xauv"]
 
 [ext_resource type="PackedScene" uid="uid://b2doyvly82yne" path="res://scenes/Characters/player.tscn" id="1_6651f"]
+[ext_resource type="Script" uid="uid://bw0qy4xww2jlk" path="res://scripts/level_5.gd" id="1_lirff"]
 [ext_resource type="Texture2D" uid="uid://bicyin8qw37ws" path="res://assets/tilemaps/pixelinterior_LRK_v1.1/floorswalls_LRK.png" id="2_yud4d"]
 [ext_resource type="Texture2D" uid="uid://c1xri5fafk4b" path="res://assets/tilemaps/cozy_interior_room/beds_BR.png" id="3_28pu4"]
 [ext_resource type="Texture2D" uid="uid://c6m5ytx2ppors" path="res://assets/tilemaps/cozy_interior_room/decorations_BR.png" id="4_7ukwv"]
@@ -5875,6 +5876,7 @@ sources/5 = SubResource("TileSetAtlasSource_lpoy4")
 
 [node name="Level_5" type="Node2D"]
 position = Vector2(-7, -79)
+script = ExtResource("1_lirff")
 
 [node name="Player" parent="." instance=ExtResource("1_6651f")]
 z_index = 8
